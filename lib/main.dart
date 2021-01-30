@@ -61,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
     _textController.clear();
     // AuthGoogle authGoogle = await AuthGoogle();
     Dialogflow dialogflow =
-        Dialogflow(token: "97e85a498fc7e49fd8125e543564f08735c6117c");
+        Dialogflow(token: "Your token");
     AIResponse response = await dialogflow.sendQuery(query);
         print(response.getMessageResponse());
 
