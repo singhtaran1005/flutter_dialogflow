@@ -1,5 +1,5 @@
+import 'package:flutter_dialogflow_v2/flutter_dialogflow_v2.dart' as df;
 import 'package:flutter/material.dart';
-import 'package:dialogflow/dialogflow.dart';
 
 void main() => runApp(new MyApp());
 
@@ -7,11 +7,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-      title: 'Healthcare bot',
+      title: 'Healthcare Bot',
       theme: new ThemeData(
         primarySwatch: Colors.deepOrange,
       ),
-      home: new MyHomePage(title: 'Healthcare Bot'),
+      home: new MyHomePage(
+        title: 'Healthcare Bot',
+      ),debugShowCheckedModeBanner: false,
     );
   }
 }
@@ -41,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 controller: _textController,
                 onSubmitted: _handleSubmitted,
                 decoration:
-                    new InputDecoration.collapsed(hintText: "Send a message"),
+                    new InputDecoration.collapsed(hintText: 'Send a message'),
               ),
             ),
             new Container(
@@ -56,44 +58,43 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-  // ignore: non_constant_identifier_names
-  void Response(query) async {
+  void response(query) async {
     _textController.clear();
-    // AuthGoogle authGoogle = await AuthGoogle();
-    Dialogflow dialogflow =
-        Dialogflow(token: "Your token");
-    AIResponse response = await dialogflow.sendQuery(query);
-        print(response.getMessageResponse());
-
+    df.AuthGoogle authGoogle =
+        await df.AuthGoogle(fileJson: 'assets/service.json').build();
+    df.Dialogflow dialogflow =
+        df.Dialogflow(authGoogle: authGoogle, );
+    df.DetectIntentResponse response = await dialogflow.detectIntent(query);
     ChatMessage message = new ChatMessage(
-      text: response.getMessageResponse(),
-      name: "Healthcare Bot",
+      text: response.queryResult.fulfillmentText,
+      name: 'Healthcare Bot',
       type: false,
     );
+            // print(response.message());
+
     setState(() {
       _messages.insert(0, message);
     });
-    // print(response.getMessageResponse());
   }
 
   void _handleSubmitted(String text) {
     _textController.clear();
     ChatMessage message = new ChatMessage(
       text: text,
-      name: "taran",
+      name: 'Taran',
       type: true,
     );
     setState(() {
       _messages.insert(0, message);
     });
-    Response(text);
+    response(text);
   }
 
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text(widget.title),
+        title: new Text('Healthcare Bot'),
       ),
       body: new Column(children: <Widget>[
         new Flexible(
@@ -124,6 +125,7 @@ class ChatMessage extends StatelessWidget {
     return <Widget>[
       new Container(
         margin: const EdgeInsets.only(right: 16.0),
+        // child: new CircleAvatar(child: new Image.asset('img/placeholder.png')),
       ),
       new Expanded(
         child: new Column(
@@ -147,7 +149,6 @@ class ChatMessage extends StatelessWidget {
         child: new Column(
           crossAxisAlignment: CrossAxisAlignment.end,
           children: <Widget>[
-            // ignore: deprecated_member_use
             new Text(this.name, style: Theme.of(context).textTheme.subhead),
             new Container(
               margin: const EdgeInsets.only(top: 5.0),
