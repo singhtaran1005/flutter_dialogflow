@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "healthcarebot-qcem",
+  "private_key_id": "97e85a498fc7e49fd8125e543564f08735c6117c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCJb80GAVC0JH2/\n2Z1zvDb0Fh31qRWVXOcR5x86SNmRyq0SFCSWp5XKht5TWW31WeIg/YYgKF1hWaZH\ny/dMFawJEaRRzPwOxItcjWu1BN4XdHyPRAfW9NqQr1SDdFmZBhjSkFywC7aUbFJy\n3ehhaUHTYH9dysXWVys5NvgI0yfijAwnhqKrfVNKDTrL5d4vBhWEoBTdtQAcFMIG\npVPfFP+sEx2fUj86Iyj2vLQHMZN4bRjdc8S1cjm2eYf2cRFNKnInBrXIfn/KDpJ1\nTDguriKesY7T5KOJn0pL4cl/kDkghHqoGoKSHwe5ZzKqECyGZWNXmlOAJQfoMZeC\njrPeAbF/AgMBAAECggEAQCqoqHMYwOKAq3/omU54wcFJv5Zv80pqv9sOo2G74uuj\nnls1MfmQX/xT9Mo+Il0SzKBRbNYrsvXuQnsiPK2poppQA7kWvbZZ8p48eUmKf5zt\nQt5aYqvzF7YkWTOLWXyVPkoUXEU7u1RPsj2U71X7W7sj/CBd+dK85XuallQvvP9C\nvf/WZQpxmNaPLMW8PVQMfB5JVyL4/hAJgTQHDvKsyEJKNOuL8cjOXu9XwWQQArdm\np/Ot1UipT0gItg2GShRUBfhFJ8d1XAWFY4VKVP+ycPTmHBd9AiFPNHMaqwaFpsg4\nhceV84AmTcND4XuogQiTOJnhARAoqkscnV8xd1YjAQKBgQDAwG8iGHLxRtILTTTs\nWBZLresQQxcLVEclDDSNP8T+OMM6m+W50NcizUEFtYtQplNLGjzQeM5yCQnBHXJM\n062EI9JxWIRwNXCVY1ozzjWvmjPwqRdz8fTcuy6ACejsGf/8UG2XXtO3KHB2HjOV\n8Y9JlsONclaIl8UYegjpKh+PwQKBgQC2iMmW7Cd1rhd+YWJGGUOsUfCoy07Ka5hW\nrAy+OxmgEpXtfrLo/ubJktZVz7OaMc1sHQ1OnwJ3vm0dwjx1qjWt44JZ9K6aCONi\nv6ElrF8nS3HULGT/DYf65Sqii65bSbO8qBgL40aMIwwss8HdkwDeSmjS2M2Yk89Z\nD9HjFBGRPwKBgGf8aPgf8IKyDkcCk/adXwnc/d98EkaOZQNbnk5FhOURgmFwEXM5\nc5bW3KlT06Di2jS+JujhA58JuTVxyWQhHo8XNETp2Ckg62fsfZFNQjFGI5dF4d0v\nP0aFxQRWVE5riGp6iWUMR3OcYW+Xw4S1GPQ+XalFceGm3zHhREVl8DkBAoGAGdJZ\n6i64Gk6pZihylYYHa74ftFEmcT4tS72FA/gqVNmsOe+dcZZ1oXhTN8ptFtgKvkuR\n0VhvKe9XUkli8iZE97difkU92e599D81lbW/tDhY/vHUy7vnS5fVoy7tWF6hvYNt\n+2iIV1Sx6TT4rNaZ3dha4dDnrLjkMS4qu9vf7FMCgYAJXyp1aCDTLhCT0z0xYviB\nK+t808b5YJEGeK/dsPhFxqoZDXkdTtv/oeBEyGtJWIGvMWtGtAbSCkatOI6KWTLg\nNTGqZVq1q4bpMnbGbxZ1utkrvkWpYvc6iZH2RPSS3v5/TRpkfEXPYYUoqnS5sNjQ\nTG0auHhKctbcj2QVrVKp1Q==\n-----END PRIVATE KEY-----\n",
+  "client_email": "tarandialogflow@healthcarebot-qcem.iam.gserviceaccount.com",
+  "client_id": "105653828614709964173",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/tarandialogflow%40healthcarebot-qcem.iam.gserviceaccount.com"
+}
